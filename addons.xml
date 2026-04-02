@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="kable.repository" name="Kable Repository" version="0.0.1" provider-name="Kaspar Winckler">
+  <extension point="xbmc.addon.repository">
+    <dir>
+      <datadir>https://raw.githubusercontent.com/KasparWinckler/kable.datadir/main/</datadir>
+      <info>https://raw.githubusercontent.com/KasparWinckler/kable.datadir/main/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/KasparWinckler/kable.datadir/main/addons.xml.md5</checksum>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Kable Repository</summary>
+    <description>Kable Repository</description>
+    <license>GPL-3.0-or-later</license>
+  </extension>
+</addon><addon id="kable.dependencies" name="Kable Dependencies" version="0.0.2" provider-name="Kaspar Winckler">
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Kable Dependecies</summary>
+    <description>Kable Dependencies</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+  </extension>
+</addon><addon id="kable.framework" name="Kable Framework" version="0.0.2" provider-name="Kaspar Winckler">
+  <requires>
+    <import addon="kable.dependencies" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Kable Framework</summary>
+    <description>Kable Module</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+  </extension>
+</addon><addon id="kable.plugin.france_tv" name="france.tv" version="0.0.2" provider-name="Kaspar Winckler">
+  <requires>
+    <import addon="kable.framework" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Kable France.tv</summary>
+    <description>france.tv</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <assets>
+      <icon>resources/images/icon.png</icon>
+    </assets>
+  </extension>
+</addon><addon id="kable.plugin.radiofrance" name="Radio France" version="0.0.2" provider-name="Kaspar Winckler">
+  <requires>
+    <import addon="kable.framework" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="plugin.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Radio France</summary>
+    <description>Radio France</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+    <assets>
+      <icon>resources/images/icon.png</icon>
+    </assets>
+  </extension>
+</addon></addons>

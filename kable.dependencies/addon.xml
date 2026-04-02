@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="kable.dependencies" name="Kable Dependencies" version="0.0.2" provider-name="Kaspar Winckler">
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Kable Dependecies</summary>
+    <description>Kable Dependencies</description>
+    <platform>all</platform>
+    <license>GPL-3.0-or-later</license>
+  </extension>
+</addon>
