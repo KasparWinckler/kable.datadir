@@ -20,7 +20,7 @@
     <platform>all</platform>
     <license>GPL-3.0-or-later</license>
   </extension>
-</addon><addon id="kable.framework" name="Kable Framework" version="0.0.2" provider-name="Kaspar Winckler">
+</addon><addon id="kable.framework" name="Kable Framework" version="0.0.3" provider-name="Kaspar Winckler">
   <requires>
     <import addon="kable.dependencies" version="0.0.0" />
   </requires>
@@ -31,15 +31,15 @@
     <platform>all</platform>
     <license>GPL-3.0-or-later</license>
   </extension>
-</addon><addon id="kable.plugin.france_tv" name="france.tv" version="0.0.2" provider-name="Kaspar Winckler">
+</addon><addon id="kable.plugin.france_tv" name="france.tv" version="0.0.3" provider-name="Kaspar Winckler">
   <requires>
-    <import addon="kable.framework" version="0.0.0" />
+    <import addon="kable.framework" version="0.0.3" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="plugin.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Kable France.tv</summary>
+    <summary>france.tv</summary>
     <description>france.tv</description>
     <platform>all</platform>
     <license>GPL-3.0-or-later</license>
